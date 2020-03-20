@@ -56,3 +56,13 @@ def bunnyEars(bunnies, count=0):
 ```
 
 ## Exercise II
+
+create a variable called highest_floor (this variable will house the floor to which the first egg will break)
+
+create a loop that will mirror the number of floors of the building in question (to keep confusion to a minimum the for loop will be written as for floor in range(1, floors+1)).
+
+    within the loop add an if statement that checks if the egg breaks at that specific floor. If yes, add the floor value to the highest_floor variable and break out of the for loop. Else, continue the loop.
+
+Return highest_floor.
+
+Time Complexity: This algorithm will have a time complexity of O(n) because in the worst case the loop will have to go through all the floors if the highest_floor is the top floor.
