@@ -113,6 +113,32 @@ class SortingRobot:
             # while loop back to beginning of the list self.move_left()
             # self.set_light_off()
 
+        for _ in range(10):
+
+            if self.light_is_on() == False:
+                while self.can_move_right() == True:
+                    print('\n', self._list, '\n')
+                    if self.compare_item() == None:
+                        self.swap_item()
+                        self.move_right()
+                    elif self.compare_item() == 1:
+                        self.swap_item()
+                        self.move_left()
+                        self.swap_item()
+                        self.move_right()
+                    elif self.compare_item() == -1:
+                        self.move_right()
+                self.set_light_on()
+            
+            else:
+                while self.can_move_left() == True:
+                    self.move_left()
+                self.set_light_off()
+
+
+                        
+
+
         
             
 
