@@ -97,7 +97,24 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        
+        # create a for loop that will loop for a prespecified amount of iterations since 
+        # declaring variables is out of the question for this implementation (no merge sort counter)
+
+        # if self.light_is_on() equals false
+            # while loop to the right until self.can_move_right() equals False 
+            # if self.compare_item() equals None (grad or drop item) move_right()
+            # if self.compare_item() equals 1 (carried item is more then position item)
+                # swap items 
+                # move_right()
+            # if self.compare_item() equals -1 move_right()
+            # self.set_light_on()
+        # if self.light_is_on() equals true 
+            # while loop back to beginning of the list self.move_left()
+            # self.set_light_off()
+
+        
+            
 
 
 if __name__ == "__main__":
