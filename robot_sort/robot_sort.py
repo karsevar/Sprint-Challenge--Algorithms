@@ -113,9 +113,7 @@ class SortingRobot:
             # while loop back to beginning of the list self.move_left()
             # self.set_light_off()
 
-        for i in range(100):
-            # print(i)
-            # print(self._light)
+        for _ in range(104):
 
             if self.light_is_on() == False:
                 while self.can_move_right() == True:
@@ -135,12 +133,14 @@ class SortingRobot:
                         self.move_right()
                         self.move_right()
                 self.set_light_on()
-            elif self.light_is_on() == True:
                 self.swap_item()
+            elif self.light_is_on() == True:
                 while self.can_move_left() == True:
                     self.move_left()
 
                 self.set_light_off()
+
+        print(self._item)
 
 # None, 2, 3, 1
 # 2, 3, 5, 1
